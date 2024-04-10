@@ -1,0 +1,85 @@
+
+/* Additional styles for register form */
+.register-form-container {
+    width: 400px; /* Same width as login options container */
+    height: 80vh; /* Same height as login options container */
+    margin: auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: fixed; /* Position fixed */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the container */
+    background-color: #fff; /* Set a background color */
+    z-index: 1001; /* Set z-index higher than login options container */
+  }
+  
+  /* Styles for overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+    z-index: 1000; /* Set a high z-index to ensure it appears above the content */
+  }
+  
+  /* Close button styles */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  
+  h2 {
+    color: #ff0000;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input {
+    width: calc(100% - 20px); /* Subtract the padding from the width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    display: block; /* Make the button a block element */
+    margin: auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4285f4;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Styles for links */
+.register-link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+.register-link button {
+    text-decoration: underline;
+  }

@@ -1,0 +1,104 @@
+/* LoginOptions.css */
+.login-options-container {
+    width: 400px;
+    height: 80vh;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed; /* Set position to fixed */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the container */
+    background-color: #fff; /* Set a background color */
+  }
+  
+  h2 {
+    color: #ff0000;
+  }
+  
+  .login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .login-option {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+    z-index: 1000; /* Set a high z-index to ensure it appears above the content */
+  }
+
+  .login-options-container {
+    /* ... existing styles ... */
+    z-index: 1001; /* Make sure the login options appear above the overlay */
+  }
+  
+  .login-option:hover {
+    background-color: #f5f5f5;
+    color: #4285f4;
+    cursor: pointer;
+  }
+  
+  .phone-login {
+    background-color: #4285f4;
+    color: #fff;
+    border-color: #4285f4;
+    cursor: pointer;
+  }
+  
+  .google-login {
+    background-color: #fff;
+    color: #4285f4;
+    border-color: #ccc;
+    width: 360px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .close-button:hover {
+    color: #ff0000;
+  }
+  
+  .register-link {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .register-link a {
+    text-decoration: underline;
+  }
